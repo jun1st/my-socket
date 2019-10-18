@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4CB32CE623596E6400AA33BA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CB32CE523596E6400AA33BA /* main.c */; };
+		4CB32CEE2359703300AA33BA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB32CED2359703300AA33BA /* CFNetwork.framework */; };
+		4CB32CF02359704000AA33BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB32CEF2359704000AA33BA /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		4CB32CE223596E6400AA33BA /* my socket */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "my socket"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB32CE523596E6400AA33BA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4CB32CED2359703300AA33BA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4CB32CEF2359704000AA33BA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB32CF02359704000AA33BA /* SystemConfiguration.framework in Frameworks */,
+				4CB32CEE2359703300AA33BA /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +49,7 @@
 			children = (
 				4CB32CE423596E6400AA33BA /* my socket */,
 				4CB32CE323596E6400AA33BA /* Products */,
+				4CB32CEC2359703300AA33BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +67,15 @@
 				4CB32CE523596E6400AA33BA /* main.c */,
 			);
 			path = "my socket";
+			sourceTree = "<group>";
+		};
+		4CB32CEC2359703300AA33BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CB32CEF2359704000AA33BA /* SystemConfiguration.framework */,
+				4CB32CED2359703300AA33BA /* CFNetwork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
